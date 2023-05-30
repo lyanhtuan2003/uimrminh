@@ -6,43 +6,80 @@ import { faFacebook, faGoogle, faLinkedin } from "@fortawesome/free-brands-svg-i
 import image2 from "./img/banner.jpg"
 import image3 from "./img/banner2.jpg"
 import { useState } from "react";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 function App() {
   const [menuopen, setMenuopen] = useState(false)
 
-  const taggle = () => {
+  const toggle = () => {
     setMenuopen(!menuopen)
   }
   return (
     // đoạn header này a xem có cách nào khắc phục k chứ e cx chỉ có đến đây thôi a ạ hihi
     <div>
       <header>
-        <div className="flex justify-around items-center bg-[#000000] leading-[65px]">
+        <div className="flex justify-around items-center bg-[#000000]  sm:leading-[65px]">
           <div>
-            <img src={image} alt="" className="w-[80px] h-[41px] " />
+            <img src={image} alt="" className="w-[80px] h-[41px]" />
           </div>
+
           <div>
-            <button onClick={taggle} className="text-white   sm:hidden">
-              {menuopen ? (<FontAwesomeIcon icon={faX} />) : (
-                <FontAwesomeIcon icon={faBars} />
+            <button onClick={toggle} className="menu-toggle  text-[25px] sm:hidden fixed right-4 top-4 z-50">
+              {menuopen ? (
+                <FontAwesomeIcon icon={faTimes} className="text-white" />
+              ) : (
+                <FontAwesomeIcon icon={faBars} className="text-white" />
               )}
             </button>
 
-            <div className={`${menuopen ? "" : "hidden"} sm:flex  left-0  items-center mt-4 sm:mt-0`}>
-              <ul className="flex flex-col sm:flex-row  text-white left sm:justify-between sm:w-auto ">
-                <li className="px-[40px]"><a href="#">TRANG CHỦ</a></li>
-                <li className="px-[40px]"><a href="#">CƠ HỘI NGHỀ NGHIỆP</a></li>
-                <li className="px-[40px]"><a href="#">VỀ RIKKEISOFT</a></li>
-                <li className="px-[40px]"><a href="#">TIN TỨC-SỰ KIỆN</a></li>
-                <li className="px-[40px]"><a href="#">LIÊN HỆ</a></li>
+            <div className={`${menuopen ? "" : "hidden"} sm:flex hidden float-right items-center mt-4 sm:mt-0`}>
+              <ul className="flex flex-col sm:flex-row text-white left sm:justify-between sm:w-auto ">
+                <li className="px-[40px]">
+                  <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
+                </li>
+                <li className="px-[40px]">
+                  <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
+                </li>
+                <li className="px-[40px]">
+                  <a href="#" className="hover:text-red-600">VỀ RIKKEISOFT</a>
+                </li>
+                <li className="px-[40px]">
+                  <a href="#" className="hover:text-red-600">TIN TỨC-SỰ KIỆN</a>
+                </li>
+                <li className="px-[40px]">
+                  <a href="#" className="hover:text-red-600">LIÊN HỆ</a>
+                </li>
               </ul>
-            </div></div>
-          <button className="bg-white text-black px-4 py-2 rounded-full shadow-md hover:shadow-lg">
-            Ngôn ngữ
-          </button>
+            </div>
+          </div>
+          <div className="h-[65px] leading-[65px] mr-[130px]">
+            <button className="bg-white text-black px-4   leading-8 shadow-md hover:shadow-lg">
+              Ngôn ngữ
+            </button>
+          </div>
 
+
+          <div className={`${menuopen ? "block" : "hidden"} fixed w-screen  bg-[#000000] text-white top-[65px] p-4 z-50`} onClick={toggle}>
+            <ul className="flex flex-col sm:flex-row text-white left sm:justify-between sm:w-auto ">
+              <li className="px-[40px]">
+                <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
+              </li>
+              <li className="px-[40px]">
+                <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
+              </li>
+              <li className="px-[40px]">
+                <a href="#" className="hover:text-red-600">VỀ RIKKEISOFT</a>
+              </li>
+              <li className="px-[40px]">
+                <a href="#" className="hover:text-red-600">TIN TỨC-SỰ KIỆN</a>
+              </li>
+              <li className="px-[40px]">
+                <a href="#" className="hover:text-red-600">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
+
 
 
 
