@@ -14,6 +14,7 @@ function App() {
     setMenuopen(!menuopen)
   }
   return (
+    // đoạn header này a xem có cách nào khắc phục k chứ e cx chỉ có đến đây thôi a ạ hihi
     <div>
       <header>
         <div className="flex justify-around items-center bg-[#000000] leading-[65px]">
@@ -42,6 +43,7 @@ function App() {
 
         </div>
       </header>
+
 
 
 
