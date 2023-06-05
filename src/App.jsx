@@ -7,12 +7,16 @@ import image2 from "./img/banner.jpg"
 import image3 from "./img/banner2.jpg"
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "./App.css"
 function App() {
   const [menuopen, setMenuopen] = useState(false)
 
   const toggle = () => {
     setMenuopen(!menuopen)
   }
+  <style>
+
+  </style>
   return (
     // đoạn header này a xem có cách nào khắc phục k chứ e cx chỉ có đến đây thôi a ạ hihi
     <div>
@@ -57,7 +61,6 @@ function App() {
             </button>
           </div>
 
-
           <div className={`${menuopen ? "block" : "hidden"} fixed w-screen  bg-[#000000] text-white top-[65px] p-4 z-50`} onClick={toggle}>
             <ul className="flex flex-col sm:flex-row text-white left sm:justify-between sm:w-auto ">
               <li className="px-[40px]">
@@ -80,15 +83,11 @@ function App() {
         </div>
       </header>
 
-
-
-
-
       <div className="text-black text-xl sm:px-72 text-center sm:mr-[350px] mt-3">
         <a href="#" className="px-2 hover:text-red-600">Trang chủ</a>/<a href="#" className="px-2 hover:text-red-600 ">Cơ hội việc làm</a>/<a href="#" className="px-2 hover:text-red-600">Tuyển dụng Ruby On Rails,VueJS</a>
       </div>
 
-      <div className="sm:flex sm:w-[1500px]  sm:m-auto sm:justify-around grid grid-cols-1">
+      <div className="sm:flex container  sm:m-auto sm:justify-around grid grid-cols-1">
         <div className="sm:w-[900px] lg:ml-[110px]">
           <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[50px] text-center">Tuyển dụng Ruby On Rails,VueJS</h1>
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center mt-[30px]">
@@ -151,7 +150,7 @@ function App() {
         </div>
       </div>
 
-      <div className="sm:w-[845px] sm:ml-[170px] px-[10px] ">
+      <div className="container sm:ml-[170px] px-[10px] ">
         <div className=" mt-[25px]">
           <h2 className="text-[22px] font-bold text-red-600 mb-[20px]  ">Mô Tả Công Việc</h2>
           <ol className="list-disc">
@@ -203,7 +202,7 @@ function App() {
       <div>
         <h1 className="text-[30px] sm:ml-[170px] font-medium  ">Vị trí đang tuyển</h1>
       </div>
-      <div className="sm:flex sm:justify-around sm:w-[1500px] grid grid-cols-1">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />01 Sales IT Support - Tiếng Nhật (N2)</b>
@@ -215,9 +214,9 @@ function App() {
           <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white ">Ứng Tuyển Ngay</button>
         </div>
       </div>
-      <hr className="sm:w-[1300px] m-auto mt-[30px]" />
+      <hr className="container m-auto mt-[30px]" />
 
-      <div className="sm:flex sm:justify-around sm:w-[1500px] grid grid-cols-1">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Java Developer (Middle)</b>
@@ -229,8 +228,8 @@ function App() {
           <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
-      <hr className="sm:w-[1300px] m-auto mt-[30px]" />
-      <div className="sm:flex sm:justify-around sm:w-[1500px] grid grid-cols-1">
+      <hr className="container m-auto mt-[30px]" />
+      <div className="sm:flex sm:justify-around container grid grid-cols-1">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
