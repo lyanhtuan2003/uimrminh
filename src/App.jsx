@@ -1,3 +1,4 @@
+
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons";
 import image from "./img/logo.jpg"
 import image1 from "./img/hot.jpg"
@@ -5,20 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import image2 from "./img/banner.jpg"
 import image3 from "./img/banner2.jpg"
-import { useState } from "react";
+import React, { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./App.css"
+import 'tailwindcss/tailwind.css';
 function App() {
   const [menuopen, setMenuopen] = useState(false)
 
   const toggle = () => {
     setMenuopen(!menuopen)
   }
-  <style>
-
-  </style>
   return (
-    // đoạn header này a xem có cách nào khắc phục k chứ e cx chỉ có đến đây thôi a ạ hihi
     <div>
       <header>
         <div className="flex justify-around items-center bg-[#000000]  sm:leading-[65px]">
@@ -202,7 +200,7 @@ function App() {
       <div>
         <h1 className="text-[30px] sm:ml-[170px] font-medium  ">Vị trí đang tuyển</h1>
       </div>
-      <div className="sm:flex sm:justify-around container grid grid-cols-1">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />01 Sales IT Support - Tiếng Nhật (N2)</b>
@@ -216,7 +214,7 @@ function App() {
       </div>
       <hr className="container m-auto mt-[30px]" />
 
-      <div className="sm:flex sm:justify-around container grid grid-cols-1">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Java Developer (Middle)</b>
@@ -229,7 +227,7 @@ function App() {
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
-      <div className="sm:flex sm:justify-around container grid grid-cols-1">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
