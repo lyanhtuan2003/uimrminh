@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --color-red:#bd252a;
+    --color-white:#FFFFFF
+}
+
+.text-red {
+    color: var(--color-red);
+}
+.color-white{
+    color:var(--color-white)
+}

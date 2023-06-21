@@ -9,7 +9,8 @@ import image3 from "./img/banner2.jpg"
 import React, { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./App.css"
-import 'tailwindcss/tailwind.css';
+import 'tailwindcss/tailwind.css'
+import "./input.css"
 function App() {
   const [menuopen, setMenuopen] = useState(false)
 
@@ -27,27 +28,27 @@ function App() {
           <div>
             <button onClick={toggle} className="menu-toggle  text-[25px] sm:hidden fixed right-4 top-4 z-50">
               {menuopen ? (
-                <FontAwesomeIcon icon={faTimes} className="text-white" />
+                <FontAwesomeIcon icon={faTimes} className="color-white" />
               ) : (
-                <FontAwesomeIcon icon={faBars} className="text-white" />
+                <FontAwesomeIcon icon={faBars} className="color-white" />
               )}
             </button>
 
             <div className={`${menuopen ? "" : "hidden"} sm:flex hidden float-right items-center mt-4 sm:mt-0`}>
-              <ul className="flex flex-col sm:flex-row text-white left sm:justify-between sm:w-auto ">
-                <li className="px-[40px]">
+              <ul className="flex flex-col sm:flex-row color-white left sm:justify-between sm:w-auto mr-36 ">
+                <li className="px-10">
                   <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
                 </li>
-                <li className="px-[40px]">
+                <li className="px-10">
                   <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
                 </li>
-                <li className="px-[40px]">
+                <li className="px-10">
                   <a href="#" className="hover:text-red-600">VỀ RIKKEISOFT</a>
                 </li>
-                <li className="px-[40px]">
+                <li className="px-10">
                   <a href="#" className="hover:text-red-600">TIN TỨC-SỰ KIỆN</a>
                 </li>
-                <li className="px-[40px]">
+                <li className="px-10">
                   <a href="#" className="hover:text-red-600">LIÊN HỆ</a>
                 </li>
               </ul>
@@ -59,21 +60,21 @@ function App() {
             </button>
           </div>
 
-          <div className={`${menuopen ? "block" : "hidden"} fixed w-screen  bg-[#000000] text-white top-[65px] p-4 z-50`} onClick={toggle}>
-            <ul className="flex flex-col sm:flex-row text-white left sm:justify-between sm:w-auto ">
-              <li className="px-[40px]">
+          <div className={`${menuopen ? "block" : "hidden"} fixed w-screen  bg-[#000000] color-white top-[65px] p-4 z-50`} onClick={toggle}>
+            <ul className="flex flex-col sm:flex-row color-white left sm:justify-between sm:w-auto ">
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
               </li>
-              <li className="px-[40px]">
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
               </li>
-              <li className="px-[40px]">
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">VỀ RIKKEISOFT</a>
               </li>
-              <li className="px-[40px]">
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">TIN TỨC-SỰ KIỆN</a>
               </li>
-              <li className="px-[40px]">
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">LIÊN HỆ</a>
               </li>
             </ul>
@@ -81,50 +82,50 @@ function App() {
         </div>
       </header>
 
-      <div className="text-black text-xl sm:px-72 text-center sm:mr-[350px] mt-3">
+      <div className="text-black text-xl  text-center sm:mr-[570px] mt-3">
         <a href="#" className="px-2 hover:text-red-600">Trang chủ</a>/<a href="#" className="px-2 hover:text-red-600 ">Cơ hội việc làm</a>/<a href="#" className="px-2 hover:text-red-600">Tuyển dụng Ruby On Rails,VueJS</a>
       </div>
 
       <div className="sm:flex container  sm:m-auto sm:justify-around grid grid-cols-1">
-        <div className="sm:w-[900px] lg:ml-[110px]">
-          <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[50px] text-center">Tuyển dụng Ruby On Rails,VueJS</h1>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center mt-[30px]">
-            <div className="w-[170px] flex justify-around mx-auto">
+        <div className="sm:w-[980px] lg:ml-[60px]">
+          <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[10px] text-center sm:mr-[190px]">Tuyển dụng Ruby On Rails,VueJS</h1>
+          <div className="grid lg:grid-cols-4 sm:w-[845px] sm:ml-[20px]  sm:grid-cols-2 grid-cols-1 mt-[30px] ">
+            <div className=" flex py-3">
               <div>
-                <FontAwesomeIcon icon={faSquareCheck} className="text-red-700 text-4xl " />
+                <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl " />
               </div>
-              <div >
-                <b className="text-[20px]">Địa điểm</b>
+              <div className="px-5">
+                <b className="text-xl">Địa điểm</b>
                 <p className="text-[18px]">Đà Nẵng</p>
               </div>
             </div>
 
-            <div className="w-[170px] flex justify-around mx-auto">
+            <div className="flex py-3">
               <div>
-                <FontAwesomeIcon icon={faSquareCheck} className="text-red-700 text-4xl" />
+                <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl" />
               </div>
-              <div >
-                <b className="text-[20px]">Trình Độ</b>
+              <div className="px-5">
+                <b className="text-xl">Trình Độ</b>
                 <p className="text-[18px]">Junior</p>
               </div>
             </div>
 
-            <div className="w-[170px] flex justify-around mx-auto">
-              <div>
-                <FontAwesomeIcon icon={faSquareCheck} className="text-red-700 text-4xl" />
-              </div>
+            <div className=" flex py-3">
               <div >
-                <b className="text-[20px]">Mức Lương</b>
+                <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl" />
+              </div>
+              <div className="px-5">
+                <b className="text-xl">Mức Lương</b>
                 <p className="text-[18px]">Thỏa thuận</p>
               </div>
             </div>
 
-            <div className="w-[170px] flex justify-around mx-auto">
+            <div className=" flex py-3">
               <div>
-                <FontAwesomeIcon icon={faSquareCheck} className="text-red-700 text-4xl" />
+                <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl" />
               </div>
-              <div >
-                <b className="text-[20px]">Ngày Hết Hạn</b>
+              <div className="px-5">
+                <b className="text-xl">Ngày Hết Hạn</b>
                 <p className="text-[18px]">31/12/2023</p>
               </div>
             </div>
@@ -136,21 +137,21 @@ function App() {
 
         </div>
 
-        <div className="m-auto">
-          <p className="text-[18px] text-center font-bold">chia sẻ</p>
-          <a href="" className="sm:text-[40px] text-[30px]  text-blue-600 px-[4px]"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a href="" className="sm:text-[40px] text-[30px] text-blue-500 px-[4px]"> <FontAwesomeIcon icon={faLinkedin} /> </a>
-          <a href="" className=" sm:text-[40px] text-[30px] text-red-600 px-[4px]"><FontAwesomeIcon icon={faGoogle} /></a>
+        <div className="m-auto w-[315px] text-center">
+          <p className="text-center font-semibold text-lg">chia sẻ</p>
+          <a href="" className="sm:text-[40px] text-[30px]  text-blue-600 px-1"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a href="" className="sm:text-[40px] text-[30px] text-blue-500 px-1"> <FontAwesomeIcon icon={faLinkedin} /> </a>
+          <a href="" className=" sm:text-[40px] text-[30px] text-red-600 px-1"><FontAwesomeIcon icon={faGoogle} /></a>
           <div className="mt-[10px]">
-            <button className="bg-[#BD2525] text-white p-[15px]">Ứng tuyển ngay</button>
+            <button className="bg-[#BD2525] color-white font-medium w-[208px] h-[51px]">Ứng tuyển ngay</button>
           </div>
 
         </div>
       </div>
 
-      <div className="container sm:ml-[170px] px-[10px] ">
+      <div className="container sm:ml-[180px] px-[10px] ">
         <div className=" mt-[25px]">
-          <h2 className="text-[22px] font-bold text-red-600 mb-[20px]  ">Mô Tả Công Việc</h2>
+          <h2 className="text-[22px] font-bold text-red mb-[20px]  ">Mô Tả Công Việc</h2>
           <ol className="list-disc">
             <li className="text-[17px] py-[4px]">Thiết kế, coding và kiểm thử hệ thống hoặc chức năng sau khi hoàn thành.</li>
             <li className="text-[17px] py-[4px]">Xây dựng kế hoạch và quản lý tiến độ lập trình theo kế hoạch.</li>
@@ -158,7 +159,7 @@ function App() {
             <li className="text-[17px] py-[4px]">Join dự án sẽ được tham gia đầy đủ quy trình phát triển </li>
           </ol>
           <div className="px-[15px]">
-            <p className="text-[17px]" >+ Tạo thiết kế</p>
+            <p className="text-[17px]">+ Tạo thiết kế</p>
             <p className="text-[17px]">+ Tạo thiết kế</p>
             <p className="text-[17px]">+ Tạo thiết kế</p>
           </div>
@@ -166,7 +167,7 @@ function App() {
         </div>
 
         <div className="mt-[25px]">
-          <h2 className="text-[22px] font-bold text-red-600 mb-[20px]">Yêu cầu</h2>
+          <h2 className="text-[22px] font-bold text-red mb-[20px]">Yêu cầu</h2>
           <ol className="list-disc">
             <li className="text-[17px] py-[4px]">Từ 2 năm kinh nghiệm</li>
             <li className="text-[17px] py-[4px]">Kỹ thuật: Rails, VueJS (đã làm với NuxtJS là lợi thế)</li>
@@ -181,7 +182,7 @@ function App() {
 
 
         <div className=" mt-[25px] mb-[35px]">
-          <h2 className="text-[22px] font-bold text-red-600 mb-[20px]">Quyền Lợi</h2>
+          <h2 className="text-[22px] font-bold text-red mb-[20px]">Quyền Lợi</h2>
           <ul className="list-disc ">
             <li className="text-[17px] py-[4px]">LƯƠNG: Tối thiểu 13 tháng lương/năm. Xét TĂNG 2 lần/năm.</li>
             <li className="text-[17px] py-[4px]">THƯỞNG: thưởng Tết, thưởng dự án, thưởng ngày lễ, thưởng giới thiệu nhân sự...</li>
@@ -198,7 +199,7 @@ function App() {
       </div>
 
       <div>
-        <h1 className="text-[30px] sm:ml-[170px] font-medium  ">Vị trí đang tuyển</h1>
+        <h1 className="text-4xl sm:ml-[170px] font-semibold  ">Vị trí đang tuyển</h1>
       </div>
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
@@ -209,7 +210,7 @@ function App() {
           </span>
         </div>
         <div className="mt-[50px] m-[80px]">
-          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white ">Ứng Tuyển Ngay</button>
+          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white ">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
@@ -223,7 +224,7 @@ function App() {
           </span>
         </div>
         <div className="mt-[50px] m-[80px]">
-          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
+          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
@@ -236,7 +237,7 @@ function App() {
           </span>
         </div>
         <div className="mt-[50px] m-[80px]">
-          <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
+          <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
 
@@ -251,98 +252,98 @@ function App() {
         <div className="grid sm:grid-cols-4  sm:px-[130px] grid-cols-2">
           <div className="py-[30px]">
             <img src={image} alt="" className="w-[116px] h-[60px]" />
-            <p className="text-white text-[20px] py-[15px]">Nơi giấc mơ bắt đầu</p>
+            <p className="color-white text-xl py-[15px]">Nơi giấc mơ bắt đầu</p>
           </div>
           <div className="py-[30px]">
             <ul>
-              <li className="text-white py-[4px] hover:underline"><a href="#">Trang chủ</a></li>
-              <li className="text-white py-[4px] hover:underline"><a href="#">Cơ hội nghề nghiệp</a></li>
-              <li className="text-white py-[4px] hover:underline"><a href="#">Tin tức - sử kiện</a></li>
-              <li className="text-white py-[4px] hover:underline"><a href="#">Liên hệ</a></li>
+              <li className="color-white py-[4px] hover:underline"><a href="#">Trang chủ</a></li>
+              <li className="color-white py-[4px] hover:underline"><a href="#">Cơ hội nghề nghiệp</a></li>
+              <li className="color-white py-[4px] hover:underline"><a href="#">Tin tức - sử kiện</a></li>
+              <li className="color-white py-[4px] hover:underline"><a href="#">Liên hệ</a></li>
             </ul>
           </div>
 
-          <div className="text-white text-[20px] py-[30px]">
+          <div className="color-white text-xl py-[30px]">
             <h1>Kênh kết nối</h1>
             <a href="" className="text-[40px] text-blue-600 px-[4px]"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="" className="text-[40px] text-blue-500 px-[4px]"> <FontAwesomeIcon icon={faLinkedin} /> </a>
-            <a href="" className="text-[40px] text-red-600 px-[4px]"><FontAwesomeIcon icon={faGoogle} /></a>
+            <a href="" className="text-[40px] text-red px-[4px]"><FontAwesomeIcon icon={faGoogle} /></a>
           </div>
 
         </div>
 
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 text-center  sm:px-[130px]">
-          <div className="w-[300px] text-white">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:px-[130px]">
+          <div className="w-[300px] color-white p-5">
             <h2 className="text-[17px] font-bold">Hà Nội</h2>
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>Điện thoại</p>
               <p>(+84) 243-6231-685</p>
             </div>
 
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>E-mail</p>
               <p>tuyendung@rikkeisoft.com</p>
             </div>
 
             <div >
-              <p className="text-[14px] mt-[10px]">Tầng 21, Tòa nhà Handico, Đ.Phạm Hùng, Q.Nam Từ Liêm, Hà Nội, Việt Nam</p>
+              <p className="text-sm mt-[10px]">Tầng 21, Tòa nhà Handico, Đ.Phạm Hùng, Q.Nam Từ Liêm, Hà Nội, Việt Nam</p>
             </div>
 
           </div>
 
 
-          <div className="w-[300px] text-white">
+          <div className="w-[300px] color-white p-5">
             <h2 className="text-[17px] font-bold">Đà Nẵng</h2>
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>Điện thoại</p>
               <p>(+84) 23 696 268 5</p>
             </div>
 
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>E-mail</p>
               <p>tuyendung@rikkeisoft.com</p>
             </div>
 
             <div >
-              <p className="text-[14px] mt-[10px]">Tầng 11 Toà nhà Thông Tấn Xã Việt Nam, 81 Quang Trung, Q. Hải Châu, Đà Nẵng.</p>
+              <p className="text-sm mt-[10px]">Tầng 11 Toà nhà Thông Tấn Xã Việt Nam, 81 Quang Trung, Q. Hải Châu, Đà Nẵng.</p>
             </div>
 
           </div>
 
 
-          <div className="w-[300px] text-white">
+          <div className="w-[300px] color-white p-5">
             <h2 className="text-[17px] font-bold">Hồ Chí minh</h2>
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>Điện thoại</p>
               <p>(+84) 243-6231-685</p>
             </div>
 
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>E-mail</p>
               <p>tuyendung@rikkeisoft.com</p>
             </div>
 
             <div >
-              <p className="text-[14px] mt-[10px]">Tòa nhà Đảm Bảo An Toàn Hàng Hải phía Nam Số 42 đường Tự Cường, phường 4, Quận Tân Bình, thành phố Hồ Chí Minh, Việt Nam</p>
+              <p className="text-sm mt-[10px]">Tòa nhà Đảm Bảo An Toàn Hàng Hải phía Nam Số 42 đường Tự Cường, phường 4, Quận Tân Bình, thành phố Hồ Chí Minh, Việt Nam</p>
             </div>
 
           </div>
 
 
-          <div className="w-[300px] text-white">
+          <div className="w-[300px] color-white p-5">
             <h2 className="text-[17px] font-bold">Nhật Bản</h2>
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>Điện thoại</p>
               <p>(+81) 3-6435-0754</p>
             </div>
 
-            <div className="text-[14px] mt-[10px]">
+            <div className="text-sm mt-[10px]">
               <p>E-mail</p>
               <p>tuyendung@rikkeisoft.com</p>
             </div>
 
             <div >
-              <p className="text-[14px] mt-[10px]">3F, Tòa nhà Tamachi 16th Fujishima, 4-13-4 Shiba, Minato-ku, Tokyo, Nhật Bản</p>
+              <p className="text-sm mt-[10px]">3F, Tòa nhà Tamachi 16th Fujishima, 4-13-4 Shiba, Minato-ku, Tokyo, Nhật Bản</p>
             </div>
 
           </div>
@@ -350,7 +351,7 @@ function App() {
 
         <hr className="mt-[35px] " />
 
-        <p className="text-white sm:px-[130px] sm:py-[25px] text-center">@2023 Rikkeisoft. Đã đăng ký Bản quyền</p>
+        <p className="color-white sm:px-[130px] sm:py-[25px] text-center">@2023 Rikkeisoft. Đã đăng ký Bản quyền</p>
       </footer>
     </div>
   )
