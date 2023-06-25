@@ -88,8 +88,8 @@ function App() {
 
       <div className="sm:flex container  sm:m-auto sm:justify-around grid grid-cols-1">
         <div className="sm:w-[980px] lg:ml-[60px]">
-          <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[10px] text-center sm:mr-[190px]">Tuyển dụng Ruby On Rails,VueJS</h1>
-          <div className="grid lg:grid-cols-4 sm:w-[845px] sm:ml-[20px]  sm:grid-cols-2 grid-cols-1 mt-[30px] ">
+          <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[10px] text-center sm:mr-[60px]">Tuyển dụng Ruby On Rails,VueJS</h1>
+          <div className="grid lg:grid-cols-4 sm:w-[845px] sm:ml-[120px]  sm:grid-cols-2 grid-cols-1 mt-[30px] ">
             <div className=" flex py-3">
               <div>
                 <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl " />
@@ -149,7 +149,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container sm:ml-[180px] px-[10px] ">
+      <div className="container px-4  sm:px-[150px] ">
         <div className=" mt-[25px]">
           <h2 className="text-[22px] font-bold text-red mb-[20px]  ">Mô Tả Công Việc</h2>
           <ol className="list-disc">
@@ -199,54 +199,60 @@ function App() {
       </div>
 
       <div>
-        <h1 className="text-4xl sm:ml-[170px] font-semibold  ">Vị trí đang tuyển</h1>
+        <h1 className="text-4xl sm:ml-[120px] px-[30px] font-semibold  ">Vị trí đang tuyển</h1>
       </div>
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
-        <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
+        <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />01 Sales IT Support - Tiếng Nhật (N2)</b>
             <p className="text-[19px] py-[10px] hover:text-red-600">Địa Điểm: Hà Nội - Trình Độ: Junior</p>
             <p className="text-[19px] ">- Hỗ trợ công việc của Sales chính, thực hiện process giấy tờ, tài liệu, profile công ty và triển khai thông tin đến phòng ban có liên quan. - Phối hợp với Rikkei Japan để làm thủ tục liên quan đến kh...</p>
           </span>
         </div>
-        <div className="mt-[50px] m-[80px]">
+        <div className="mt-[50px] px-[30px] ">
           <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white ">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
 
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
-        <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
+        <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Java Developer (Middle)</b>
             <p className="text-[19px] py-[10px] hover:text-red-600 ">Địa Điểm: Hà Nội - Trình Độ:</p>
             <p className="text-[19px] ">- Phát triển dự án về bảo hiểm cho khách hàng. - Phạm vi công việc từ làm rõ yêu cầu của khách hàng, viết tài liệu thiết kế hệ thống cho đến develop, testing, deploy và vận hành hệ thống cho khách hàn...</p>
           </span>
         </div>
-        <div className="mt-[50px] m-[80px]">
-          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
+        <div className="mt-[50px] px-[30px] ">
+          <button className="bg-white border  border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
-        <div className="sm:w-[845px] sm:ml-6 mt-[20px]">
+        <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
             <p className="text-[19px] py-[10px] hover:text-red-600">Địa Điểm: Đà Nẵng - Trình Độ: Junior</p>
             <p className="text-[19px] ">◦ Thiết kế, coding và kiểm thử hệ thống hoặc chức năng sau khi hoàn thành. ◦ Xây dựng kế hoạch và quản lý tiến độ lập trình theo kế hoạch. ◦ Nghiên cứu nắm bắt công nghệ mới. ◦ Join dự án sẽ đ...</p>
           </span>
         </div>
-        <div className="mt-[50px] m-[80px]">
+        <div className="mt-[50px] px-[30px] ">
           <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
 
-      <div className="relative">
-        <img src={image3} alt="" className="w-full sm:h-[550px] h-[350px] mt-[60px]" />
-        <div className="bg-[#ffffff] w-[420px] sm:w-[1100px] m-auto rounded-xl absolute top-12 left-7 sm:top-[100px] sm:left-[200px]">
-          <img src={image2} alt="" className="sm:w-[550px] sm:h-[350px] h-[250px] w-[300p] p-[30px]" />
+      <div className="relative" style={{ background: '#ffffff' }}>
+        <object className="w-full sm:h-[550px] h-[350px] mt-[60px]" data={image3}>
+          <img alt="" src={image3} className="w-full" />
+        </object>
+        <div className="w-[420px] sm:w-[1100px] m-auto rounded-xl p-[30px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ background: '#ffffff' }}>
+          <object>
+            <img alt="" src={image2} className="sm:w-[550px] sm:h-[350px] h-[250px] w-[300p]" />
+          </object>
         </div>
       </div>
+
+
 
       <footer className="bg-black">
         <div className="grid sm:grid-cols-4  sm:px-[130px] grid-cols-2">
