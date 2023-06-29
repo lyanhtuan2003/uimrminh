@@ -130,13 +130,7 @@ function App() {
               </div>
             </div>
           </div>
-
-
-
-
-
         </div>
-
         <div className="m-auto w-[315px] text-center">
           <p className="text-center font-semibold text-lg">chia sẻ</p>
           <a href="" className="sm:text-[40px] text-[30px]  text-blue-600 px-1"><FontAwesomeIcon icon={faFacebook} /></a>
@@ -145,13 +139,12 @@ function App() {
           <div className="mt-[10px]">
             <button className="bg-[#BD2525] color-white font-medium w-[208px] h-[51px]">Ứng tuyển ngay</button>
           </div>
-
         </div>
       </div>
 
-      <div className="container px-4  sm:px-[150px] ">
-        <div className=" mt-[25px]">
-          <h2 className="text-[22px] font-bold text-red mb-[20px]  ">Mô Tả Công Việc</h2>
+      <div className="container sm:px-[150px]">
+        <div className=" mt-[25px] max-sm:px-9">
+          <h2 className="text-[22px] font-bold text-red mb-[20px] ">Mô Tả Công Việc</h2>
           <ol className="list-disc">
             <li className="text-[17px] py-[4px]">Thiết kế, coding và kiểm thử hệ thống hoặc chức năng sau khi hoàn thành.</li>
             <li className="text-[17px] py-[4px]">Xây dựng kế hoạch và quản lý tiến độ lập trình theo kế hoạch.</li>
@@ -166,7 +159,7 @@ function App() {
 
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[25px] max-sm:px-9">
           <h2 className="text-[22px] font-bold text-red mb-[20px]">Yêu cầu</h2>
           <ol className="list-disc">
             <li className="text-[17px] py-[4px]">Từ 2 năm kinh nghiệm</li>
@@ -181,7 +174,7 @@ function App() {
 
 
 
-        <div className=" mt-[25px] mb-[35px]">
+        <div className=" mt-[25px] mb-[35px] max-sm:px-9">
           <h2 className="text-[22px] font-bold text-red mb-[20px]">Quyền Lợi</h2>
           <ul className="list-disc ">
             <li className="text-[17px] py-[4px]">LƯƠNG: Tối thiểu 13 tháng lương/năm. Xét TĂNG 2 lần/năm.</li>
@@ -204,13 +197,13 @@ function App() {
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
-            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />01 Sales IT Support - Tiếng Nhật (N2)</b>
+            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] max-sm:w-5 max-sm:h-6" />01 Sales IT Support - Tiếng Nhật (N2)</b>
             <p className="text-[19px] py-[10px] hover:text-red-600">Địa Điểm: Hà Nội - Trình Độ: Junior</p>
             <p className="text-[19px] ">- Hỗ trợ công việc của Sales chính, thực hiện process giấy tờ, tài liệu, profile công ty và triển khai thông tin đến phòng ban có liên quan. - Phối hợp với Rikkei Japan để làm thủ tục liên quan đến kh...</p>
           </span>
         </div>
         <div className="mt-[50px] px-[30px] ">
-          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white ">Ứng Tuyển Ngay</button>
+          <button className="bg-white border border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white ">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
@@ -218,26 +211,26 @@ function App() {
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
-            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Java Developer (Middle)</b>
+            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px]  max-sm:w-5 max-sm:h-6" />Java Developer (Middle)</b>
             <p className="text-[19px] py-[10px] hover:text-red-600 ">Địa Điểm: Hà Nội - Trình Độ:</p>
             <p className="text-[19px] ">- Phát triển dự án về bảo hiểm cho khách hàng. - Phạm vi công việc từ làm rõ yêu cầu của khách hàng, viết tài liệu thiết kế hệ thống cho đến develop, testing, deploy và vận hành hệ thống cho khách hàn...</p>
           </span>
         </div>
         <div className="mt-[50px] px-[30px] ">
-          <button className="bg-white border  border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
+          <button className="bg-white border  border-red-500 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
       <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
-            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] w-[25px]" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
+            <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] max-sm:w-5 max-sm:h-6" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
             <p className="text-[19px] py-[10px] hover:text-red-600">Địa Điểm: Đà Nẵng - Trình Độ: Junior</p>
             <p className="text-[19px] ">◦ Thiết kế, coding và kiểm thử hệ thống hoặc chức năng sau khi hoàn thành. ◦ Xây dựng kế hoạch và quản lý tiến độ lập trình theo kế hoạch. ◦ Nghiên cứu nắm bắt công nghệ mới. ◦ Join dự án sẽ đ...</p>
           </span>
         </div>
         <div className="mt-[50px] px-[30px] ">
-          <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:color-white">Ứng Tuyển Ngay</button>
+          <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
 
