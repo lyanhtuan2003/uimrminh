@@ -14,11 +14,6 @@ import "./input.css"
 function App() {
   const [menuopen, setMenuopen] = useState(false)
 
-  // console.log("1")
-  // console.log("1")
-  // console.log("1")
-  // console.log("2")
-  // console.log("3")
 
   const toggle = () => {
     setMenuopen(!menuopen)
@@ -95,13 +90,13 @@ function App() {
       <div className="sm:flex container  sm:m-auto sm:justify-around grid grid-cols-1">
         <div className="sm:w-[980px] lg:ml-[60px]">
           <h1 className="sm:text-[45px] text-[35px] font-bold  mt-[20px] sm:px-[10px] text-center sm:mr-[60px]">Tuyển dụng Ruby On Rails,VueJS</h1>
-          <div className="grid lg:grid-cols-4 sm:w-[845px] sm:ml-[120px]  sm:grid-cols-2 grid-cols-1 mt-[30px] ">
+          <div className="grid lg:grid-cols-4 sm:w-[845px] sm:ml-[120px]  sm:grid-cols-2 grid-cols-1 mt-[30px] ml-[50px] ">
             <div className=" flex py-3">
               <div>
                 <FontAwesomeIcon icon={faSquareCheck} className="text-red text-4xl " />
               </div>
               <div className="px-5">
-                <b className="text-xl">Địa điểm</b>
+                <b className="txt-xl">Địa điểm</b>
                 <p className="text-[18px]">Đà Nẵng</p>
               </div>
             </div>
@@ -166,7 +161,7 @@ function App() {
         </div>
 
         <div className="mt-[25px] max-sm:px-9">
-          <h2 className="text-[22px] font-bold text-red mb-[20px]">Yêu cầu</h2>
+          <h2 className="text-[22px] font-bold text-red mb-[20px] left">Yêu cầu</h2>
           <ol className="list-disc">
             <li className="text-[17px] py-[4px]">Từ 2 năm kinh nghiệm</li>
             <li className="text-[17px] py-[4px]">Kỹ thuật: Rails, VueJS (đã làm với NuxtJS là lợi thế)</li>
@@ -181,7 +176,7 @@ function App() {
 
 
         <div className=" mt-[25px] mb-[35px] max-sm:px-9">
-          <h2 className="text-[22px] font-bold text-red mb-[20px]">Quyền Lợi</h2>
+          <h2 className="text-[22px] font-bold text-red mb-[20px] left">Quyền Lợi</h2>
           <ul className="list-disc ">
             <li className="text-[17px] py-[4px]">LƯƠNG: Tối thiểu 13 tháng lương/năm. Xét TĂNG 2 lần/năm.</li>
             <li className="text-[17px] py-[4px]">THƯỞNG: thưởng Tết, thưởng dự án, thưởng ngày lễ, thưởng giới thiệu nhân sự...</li>
@@ -200,7 +195,7 @@ function App() {
       <div>
         <h1 className="text-4xl sm:ml-[120px] px-[30px] font-semibold  ">Vị trí đang tuyển</h1>
       </div>
-      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 left m-auto">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] max-sm:w-5 max-sm:h-6" />01 Sales IT Support - Tiếng Nhật (N2)</b>
@@ -214,7 +209,7 @@ function App() {
       </div>
       <hr className="container m-auto mt-[30px]" />
 
-      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto left">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px]  max-sm:w-5 max-sm:h-6" />Java Developer (Middle)</b>
@@ -227,7 +222,7 @@ function App() {
         </div>
       </div>
       <hr className="container m-auto mt-[30px]" />
-      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto">
+      <div className="sm:flex sm:justify-around container grid grid-cols-1 m-auto left">
         <div className="sm:w-[845px] px-[30px]  mt-[20px]">
           <span>
             <b className="flex sm:text-[22px] text-[18px] hover:text-red-600"><img src={image1} alt="" className="sm:w-[32px] max-sm:w-5 max-sm:h-6" />Tuyển dụng lập trình viên CakePhp, VueJS</b>
@@ -239,17 +234,14 @@ function App() {
           <button className="bg-white border border-red-600 text-red-500 px-[25px] py-[12px] rounded hover:bg-red-600 hover:text-white">Ứng Tuyển Ngay</button>
         </div>
       </div>
-
       <div className="relative" style={{ background: '#ffffff' }}>
-        <object className="w-full sm:h-[550px] h-[350px] mt-[60px]" data={image3}>
-          <img alt="" src={image3} className="w-full" />
-        </object>
+        <img alt="" src={image3} className="w-full sm:h-[550px] h-[350px] mt-[60px] object-cover" />
         <div className="w-[420px] sm:w-[1100px] m-auto rounded-xl p-[30px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ background: '#ffffff' }}>
-          <object>
-            <img alt="" src={image2} className="sm:w-[550px] sm:h-[350px] h-[250px] w-[300p]" />
-          </object>
+          <img alt="" src={image2} className="sm:w-[550px] sm:h-[350px] h-[250px] w-[300p] object-cover" />
         </div>
       </div>
+
+
 
 
 
