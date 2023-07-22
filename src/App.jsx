@@ -67,6 +67,9 @@ function App() {
                 <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
               </li>
               <li className="px-10">
+                <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
+              </li>
+              <li className="px-10">
                 <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
               </li>
               <li className="px-10">
