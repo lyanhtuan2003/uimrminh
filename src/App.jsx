@@ -38,7 +38,7 @@ function App() {
             <div className={`${menuopen ? "" : "hidden"} sm:flex hidden float-right items-center mt-4 sm:mt-0`}>
               <ul className="flex flex-col sm:flex-row color-white left sm:justify-between sm:w-auto mr-36 ">
                 <li className="px-10">
-                  <a href="#" className="hover:text-red-600">TRAN</a>
+                  <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
                 </li>
                 <li className="px-10">
                   <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
@@ -63,9 +63,6 @@ function App() {
 
           <div className={`${menuopen ? "block" : "hidden"} fixed w-screen  bg-[#000000] color-white top-[65px] p-4 z-50`} onClick={toggle}>
             <ul className="flex flex-col sm:flex-row color-white left sm:justify-between sm:w-auto ">
-              <li className="px-10">
-                <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
-              </li>
               <li className="px-10">
                 <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
               </li>
