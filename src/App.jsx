@@ -38,7 +38,7 @@ function App() {
             <div className={`${menuopen ? "" : "hidden"} sm:flex hidden float-right items-center mt-4 sm:mt-0`}>
               <ul className="flex flex-col sm:flex-row color-white left sm:justify-between sm:w-auto mr-36 ">
                 <li className="px-10">
-                  <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
+                  <a href="#" className="hover:text-red-600">TRAN</a>
                 </li>
                 <li className="px-10">
                   <a href="#" className="hover:text-red-600">CƠ HỘI NGHỀ NGHIỆP</a>
